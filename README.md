@@ -1,2 +1,2 @@
 # Assign-03-HTML-FuelCalculator
-[![GitHub's Super Linter](https://github.com/ICS2O-EmmaJ/Assign-03-HTML-FuelCalculatorworkflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/ICS2O-EmmaJ/Assign-03-HTML-FuelCalculator/actions)
+[![GitHub's Super Linter](https://github.com/ICS2O-EmmaJ/Assign-03-HTML-FuelCalculator/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/ICS2O-EmmaJ/Assign-03-HTML-FuelCalculator/actions)
