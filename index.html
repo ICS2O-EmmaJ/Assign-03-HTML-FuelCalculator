@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fuel Quantity Required and Fuel Cost Calculator for a Car Trip">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Emma Janani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Fuel Quantity Required and Fuel Cost Calculator for a Car </title>
+
+    <!-- To use Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" /> 
+  </head>
+  <center>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1><font face="Georgia">Fuel Quantity Required and Fuel  
+      <br>
+      Cost Calculator for a Car Trip</h1>
+      <center><img src="./images/carride.gif" width="800"></center>
+      <br>
+      <br>
+      <br>
+
+    <!-- Formula of Sphere and Calculations -->    
+    <table>
+    	<tr>
+    		<td>
+    			<h3>Enter the following information about the car trip:</h3>
+    			<form action="javascript:calcFuel()">
+    				<label for="distance">The distance of the trip (km):</label>
+    				<input type="number" step="any" id="distance" placeholder="Distance (km)"><br><br>
+    				<label for="efficiency">The fuel efficiency (L/100km):</label>
+    				<input type="number" step="any" id="efficiency" placeholder="Efficiency (L/100km)"><br><br>
+    				<label for="price">The price of fuel ($/L):</label>
+    				<input type="number" step="any" id="price" placeholder="Price ($/L)"><br><br>
+    				<input type="submit" value="Calculate">
+    		  </form>
+    		</td>
+    		<td width=45%>
+          <img src="./images/car.webp" alt="Car" width="50%" height="auto"/>
+    		</td>
+    	</tr>
+  	</table>
+
+    <center><img src="./images/cartrip.jpg" width="500"></center>
+
+
+  	<!-- Create a space where the user information will be displayed -->
+  	<div id="display-results">
+    	<div id="fuel-required"></div>
+  		<div id="fuel-cost"></div>
+  	</div>
+    </p>
+    <br>
+    <br>
+    <br>
+  </body>
+  </center>
+</html>
