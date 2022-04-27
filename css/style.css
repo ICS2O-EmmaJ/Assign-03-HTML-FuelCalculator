@@ -5,26 +5,29 @@
 */
 
 body {
-	background-color: #cce3f5;
+	background-color: #b4d9ed;
 }
 
 h1 {
-	background-color: #4d52ea;
+	background-color: #0078b8;
 	color: white;
 	padding: 40px;
 	text-align: center;
 }
 
+h5 {
+  font-weight:bold;
+  
+}
+
 div {
   font-weight: bold;
   color: white;
-  margin: 5px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 #display-results{
-  background-color: #192a9e;
+  background-color: #0061ab;
 }
 
-button {
-background-color: #c2ffea;
-}

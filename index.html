@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Meta Data -->
     <meta charset="utf-8">
     <meta name="description" content="Fuel Quantity Required and Fuel Cost Calculator for a Car Trip">
     <meta name="keywords" content="immaculata, ics2o">
     <meta name="author" content="Emma Janani">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
     <link rel="manifest" href="./fav_index/site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
     <title>Fuel Quantity Required and Fuel Cost Calculator for a Car </title>
-
     <!-- To use Google's MDL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" /> 
@@ -23,43 +24,82 @@
     <h1><font face="Georgia">Fuel Quantity Required and Fuel  
       <br>
       Cost Calculator for a Car Trip</h1>
-      <center><img src="./images/formulas.png" width="800"></center>
-      <center><img src="./images/carvideo.gif" width="800"></center>
-      <br>
-      <br>
-      <br>
+    <h5><font face="Georgia">How often do you use a car to go somewhere? Probably a lot! Here are some examples of car trips I make!</h5>
+    
+    <!-- MDL Icon List -->
+    <style>
+    .demo-list-icon {
+      width: 300px;
+    }
+    </style>
+    
+    <ul class="demo-list-icon mdl-list">
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">star</i>
+        <font face="Georgia">Driving to school everyday
+    </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">star</i>
+        <font face="Georgia">Driving to piano lessons on Thursdays
+      </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">star</i>
+        <font face="Georgia">Driving to the mall to go shopping
+      </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">star</i>
+        <font face="Georgia">Road trips in the Summer!
+      </span>
+      </li>
+    </ul>
 
-    <!-- Formula of Sphere and Calculations -->    
-    <table>
-    	<tr>
-    		<td>
-    			<h3>Enter the following information about the car trip:</h3>
+    <!-- Driving GIF -->
+    <img src="./images/carvideo.gif" width="800">
+    <h5><font face="Georgia">Have you ever thought about how fuel is required every time you use your car, 
+      <br>
+      <br>
+      or how much that fuel costs? Use the slider to indicate how expensive you think it is!</h5>
+    <!-- Slider with Starting Value -->
+    <p style="width:800px">
+    <input class="mdl-slider mdl-js-slider" type="range"
+    id="s1" min="0" max="10" value="4" step="2">
+    </p>
+    <br>
+    <!-- Formula Image -->
+      <center><img src="./images/formulas.png" width="800"></center>
+      <br>
+    <!-- Form and User Input -->    
+      <table>
+        <tr>
+          <td style="width:30%"><img src="./images/caricon.png" alt="Car" width="50%" height="auto"/></td>
+    			<td style="width:50%"><h4><font face="Georgia">Enter the following information about the car trip:</h4>
     			<form action="javascript:calcFuel()">
     				<label for="distance">The distance of the trip (km):</label>
-    				<input type="number" step="any" id="distance" placeholder="Distance (km)"><br><br>
+    				<input type="number" step="any" min="0" max="2000" id="distance" placeholder="Distance (km)"><br><br>
     				<label for="efficiency">The fuel efficiency (L/100km):</label>
-    				<input type="number" step="any" id="efficiency" placeholder="Efficiency (L/100km)"><br><br>
+    				<input type="number" step="any" min="0" id="efficiency" placeholder="Efficiency (L/100km)"><br><br>             
     				<label for="price">The price of fuel ($/L):</label>
-    				<input type="number" step="any" id="price" placeholder="Price ($/L)"><br><br>
-    				<input type="submit" value="Calculate">
-    		  </form>
-    		</td>
-    		<td width=45%>
-          <img src="./images/car.webp" alt="Car" width="50%" height="auto"/>
-    		</td>
-    	</tr>
-  	</table>
-
-    <center><img src="./images/cartrip.jpg" width="500"></center>
-
-
+    				<input type="number" step="0.01" min="0" id="price" placeholder="Price ($/L)"><br><br>
+    				<input type="submit" value="Calculate"><br><br><br>
+          </form></td>
+          <td style="width:8%"><img src="./images/gettingfuel.png" alt="Car" width="100%" height="auto"/></td>
+        </tr>
+      </table>
   	<!-- Create a space where the user information will be displayed -->
   	<div id="display-results">
     	<div id="fuel-required"></div>
   		<div id="fuel-cost"></div>
   	</div>
-    </p>
     <br>
+    <!-- Image -->
+    <img src="./images/cartrip.jpg" width="500"></center>
     <br>
     <br>
   </body>
