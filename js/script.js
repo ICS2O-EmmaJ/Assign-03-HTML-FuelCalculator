@@ -14,9 +14,9 @@ function calcFuel() {
   let fuel_required = tripDistance * (fuelEfficiency / 100)
   let fuel_cost = tripDistance * (fuelEfficiency / 100) * fuelPrice
 
-  // if tripDistance is more than 200km, display "Bon Voyage and Safe Travels!"
+  // if tripDistance is more than 200km, display "Have a safe trip!"
   if (tripDistance > 200) {
-    let greeting = "Bon Voyage and Safe Travels!"
+    let greeting = "Have a safe trip!"
     document.getElementById('greeting').innerHTML = "" + greeting
     document.getElementById('fuel-required').innerHTML = fuel_required.toFixed(2) + " litres of fuel are required for the trip,"
     document.getElementById('fuel-cost').innerHTML = " so the fuel cost is $" + fuel_cost.toFixed(2)
